@@ -7,10 +7,10 @@ import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
+import Drawer from 'material-ui/Drawer';
 
 const styleSheet = createStyleSheet('ButtonAppBar', {
   root: {
-    marginTop: 30,
     width: '100%',
   },
   flex: {
@@ -28,10 +28,13 @@ function ButtonAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography type="title" color="inherit" className={classes.flex}>
-            Title
+            Навигация
           </Typography>
           <Button color="contrast">Login</Button>
         </Toolbar>
+        <Drawer open={true} width={'100%'}>
+          Drawer
+        </Drawer>
       </AppBar>
     </div>
   );

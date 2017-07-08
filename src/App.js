@@ -6,9 +6,6 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const buttonAppBarClasses = {
-     root: {   backgroundColor: 'red'}
-    }
     return (
       <MuiThemeProvider>
         <ButtonAppBar/>
